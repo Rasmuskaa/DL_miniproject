@@ -1,0 +1,10 @@
+# Fuldt datasæt (for stort til GitHub, se README)
+Original Image/
+data/
+
+# Logs og cache
+wandb/
+__pycache__/
+*.pyc
+.vscode/
+output/
