@@ -13,20 +13,8 @@ Miniprojekt i Deep Learning (DAKI, Aalborg Universitet). ResNet18, -34 og -50 (p
 | `checkpoints/` | De færdigtrænede modeller (bedste epoch efter validation loss) |
 | `sample_data/` | 32 testbilleder (2 pr. frugt pr. klasse), så koden kan afprøves uden det fulde datasæt |
 
-## Kør med Docker (anbefalet)
 
-```bash
-docker build -t fruit-freshness .
-docker run --rm --shm-size=1g -v "$(pwd)/output:/app/figures" fruit-freshness
-```
-
-Containeren kører `test.py` med ResNet34-modellen på eksempelbillederne og udskriver metrikker. Confusion matrix og Grad-CAM-billeder havner i mappen `output/`.
-
-`--shm-size=1g` er nødvendig, fordi DataLoaderen bruger flere workers, og Dockers standard for delt hukommelse er for lille til det.
-
-Vil du teste en anden model, så ret `MODEL_NAME` og `PRETRAINED` øverst i `test.py`, og byg imaget igen.
-
-## Kør lokalt uden Docker
+## Kør testen
 
 ```bash
 pip install -r requirements.txt
