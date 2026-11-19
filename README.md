@@ -12,7 +12,6 @@ Miniprojekt i Deep Learning (DAKI, Aalborg Universitet). ResNet18, -34 og -50 (p
 | `test.py` | Evaluering på testsættet (accuracy, precision, recall, F1), confusion matrix og Grad-CAM |
 | `checkpoints/` | De færdigtrænede modeller (bedste epoch efter validation loss) |
 | `sample_data/` | 32 testbilleder (2 pr. frugt pr. klasse), så koden kan afprøves uden det fulde datasæt |
-| `figures/` | Figurer brugt i rapporten |
 
 ## Kør med Docker (anbefalet)
 

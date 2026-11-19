@@ -1,9 +1,0 @@
-.git
-Original Image/
-data/
-wandb/
-figures/
-__pycache__/
-*.pyc
-.vscode/
-output/
