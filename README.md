@@ -26,5 +26,5 @@ python test.py
 
 1. Hent det fulde datasæt *Fresh and Rotten Fruits* (Sultana et al., 2022), og læg de 16 klassemapper i `Original Image/`.
 2. `python split_data.py` laver train/val/test-splittet (seed 42).
-3. Ret `MODEL_NAME`, `PRETRAINED` og `LEARNING_RATE` i `train.py`, og kør `python train.py`. Kræver en Weights & Biases-konto, eller sæt `WANDB_MODE=offline`.
+3. Ret `MODEL_NAME`, `PRETRAINED` og `LEARNING_RATE` i `train.py`, og kør `python train.py`.
 
